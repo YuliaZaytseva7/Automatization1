@@ -11,8 +11,10 @@ try:
     input_name = chrome.find_element(By.ID, "username").send_keys("tomsmith")
     input_name = firefox.find_element(By.ID, "username").send_keys("tomsmith")
     sleep(2)
-    input_pass = chrome.find_element(By.ID, "password").send_keys("SuperSecretPassword")
-    input_pass = firefox.find_element(By.ID, "password").send_keys("SuperSecretPassword")
+    input_pass = chrome.find_element(By.ID, "password").send_keys(
+        "SuperSecretPassword")
+    input_pass = firefox.find_element(By.ID, "password").send_keys(
+        "SuperSecretPassword")
     sleep(2)
     button = chrome.find_element(By.TAG_NAME, "button").click()
     button = firefox.find_element(By.TAG_NAME, "button").click()

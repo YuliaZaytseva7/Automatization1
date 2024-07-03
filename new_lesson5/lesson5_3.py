@@ -8,7 +8,7 @@ try:
     chrome.get("http://uitestingplayground.com/classattr")
     firefox.get("http://uitestingplayground.com/classattr")
     # Нажать синюю кнопку три раза
-    for i in range(3):
+    for p in range(3):
            blue_button = chrome.find_element(
                   "xpath", "//button[contains(concat(' ', normalize-space(@class), ' '), ' btn-primary ')]")
            blue_button.click()
